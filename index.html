@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name =
+      "viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv =
+      "X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" 
+      type="text/css" href="joke.css"/>
+    <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+  <div class="container">
+    <nav class="header" id="top">
+      <h1 class="logo">JTravel</h1>
+      <ul class="navlinks">
+        <li><a href="" style="color: red">Home</a></li>
+        <li><a href="#plan">Destinations</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        </nav>
+    
+    <div class="wrapper">
+      <div class="corner">
+      </div>
+      
+      <div class="content">
+        <h1 id="tag-line">
+          We Ensure your Travel Safety
+        </h1>
+        <p>Travel across Japan with us</p>
+        <button class="cta">
+          Book Now
+        </button>
+      </div>
+      
+    </div>
+    
+    <section class="plan" id="plan">
+      <div class="haha">Top Destination</div>
+      <hr>
+      <div class="row">
+        <div class="col 1">
+          <img src="bg3.jpg">
+          <div class="title1">Tokyo</div>
+        </div>
+        
+        <div class="col 1">
+          <img src="bg.jpg">
+          <div class="title1">Yokohama</div>
+        </div>
+        
+        <div class="col 1">
+          <img src="bg2.jpg">
+          <div class="title1">Aburama</div>
+        </div>
+        
+        <div class="col 1">
+          <img src="bg3.jpg">
+          <div class="title1">Tokyo</div>
+        </div>
+        
+      </div>
+ 
+    </section>
+    
+   <!-- Cars Partnership-->
+    <section class="cars">
+      <div class="haha">Partnership</div>
+    </section>
+    
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="haha">Our Services</div>
+      
+      <!-- myClass wrapper-->
+      <div class="carousel-wrapper">
+        <div class="myClass">
+          <h2>Travel Package Sevices</h2>
+          <div class="terms">
+            <li>Car Rental</li>
+            <li>Personal Chaffeur</li>
+            <li>Travel with Tour Guide</li>
+          </div>
+        </div>
+        
+        <div class="myClass">
+          <h2>Specific Place Package</h2>
+          <div class="terms">
+            <li>Stop Shopping</li>
+            <li>Tourist Spot Places</li>
+            <li>Hotel Searching</li>
+          </div>
+        </div>
+        
+        <div class="myClass">
+          <h2>Full Service Package</h2>
+          <div class="terms">
+            <li>Air Transport</li>
+            <li>Road Transport</li>
+            <li>Sea Transport</li>
+          </div>
+        </div>
+      </div>  <!-- wrapper closed -->
+      
+
+    </section>
+    
+    <section class="about" id="about">
+      <div class="about-content">
+        
+        <div class="third">
+          
+        </div>
+        
+        <div class="fourth">
+          <h2>About Us</h2>
+          <p>lorem ipsum delor sit olor baho dolorsit lorem ipsum delor sit olor baho dolorsit lorem ipsum delor sit olor baho dolorsit erum</p>
+          <button><a href="#top">Learn More</a></button>
+          
+          <div class="customer">
+            <li>dolorsit lorem ipsum delor sit olor</li>
+            <li>dolorsit lorem ipsum delor sit olor</li>
+            <li>dolorsit lorem ipsum delor sit olor</li>
+            <li>dolorsit lorem ipsum delor sit olor</li>
+            <li>dolorsit lorem ipsum delor sit olor</li>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <footer>
+      <div class="content-footer">
+        <div class="con1">
+          <h3>JTravel</h3>
+          <p><i>travel with us</i></p>
+          <div id="policy">Privacy Policy</div>
+        </div>
+        
+        <div class="con1" id="contact">
+          <h3>Contact</h3>
+          <div id="links">
+            <a href="">www.instagram.com</a>
+            <a href="">jtravel@gmailp.com</a>
+            <a href="">09123456789</a>
+          </div>
+        </div>
+        
+        <div class="con1">
+          <h3>Information</h3>
+          <div id="links">
+            <li>Booking/Reservation</li>
+            <li>Partnership/Rental</li>
+            <li>Services/Chaffeur</li>
+          </div>
+        </div>
+        
+
+      </div>
+      
+  
+    </footer>
+  </div>
+
+<script>
+
+function myFunction() {
+  var x = document.querySelector(".navlinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+};
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("myClass");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+return;
+}
+
+</script>
+</body>
+</html>
